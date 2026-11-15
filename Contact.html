@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Kamsy Okwu</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<nav aria-label="Main navigation">
+  <a href="Assessments.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Projects.html">Projects</a>
+  <a href="Academic_Planner.html">Academic Planner</a>
+  <a href="Contact.html" aria-current="page">Contact</a>
+</nav></div></header>
+<main class="wrap">
+  <h1>Contact</h1>
+  <p class="lead">Have a question or want to work together? Send me a message.</p>
+  <form id="contact-form" novalidate style="max-width:560px">
+    <div class="field">
+      <label for="name">Name</label>
+      <input id="name" type="text" autocomplete="name" aria-describedby="name-error">
+      <p id="name-error" class="error"></p>
+    </div>
+    <div class="field">
+      <label for="email">Email</label>
+      <input id="email" type="email" autocomplete="email" aria-describedby="email-error">
+      <p id="email-error" class="error"></p>
+    </div>
+    <div class="field">
+      <label for="phone">Phone number</label>
+      <input id="phone" type="tel" inputmode="numeric" autocomplete="tel" aria-describedby="phone-error">
+      <p id="phone-error" class="error"></p>
+    </div>
+    <div class="field">
+      <label for="message">Message</label>
+      <textarea id="message" rows="6" aria-describedby="message-error message-count"></textarea>
+      <p id="message-error" class="error"></p>
+      <p id="message-count" class="counter">0 / 500</p>
+    </div>
+    <button type="submit">Send message</button>
+    <p id="form-status" role="status"></p>
+  </form>
+</main>
+<footer class="wrap"><p>&copy; <span id="year">2026</span> Kamsy Okwu</p></footer>
+</body>
+</html>

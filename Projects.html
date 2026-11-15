@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Kamsy Okwu</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+<header class="site-header"><div class="wrap">
+<nav aria-label="Main navigation">
+  <a href="Assessments.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Projects.html" aria-current="page">Projects</a>
+  <a href="Academic_Planner.html">Academic Planner</a>
+  <a href="Contact.html">Contact</a>
+</nav></div></header>
+<main class="wrap">
+  <h1>My Projects</h1>
+  <p class="lead">Here I have a few things I've built while learning web development.</p>
+  <div class="filters" role="group" aria-label="Filter projects by technology">
+    <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+    <button class="filter-btn" data-filter="html" aria-pressed="false">HTML</button>
+    <button class="filter-btn" data-filter="css" aria-pressed="false">CSS</button>
+    <button class="filter-btn" data-filter="javascript" aria-pressed="false">JavaScript</button>
+  </div>
+  <section class="project-grid" aria-label="Project list">
+    <article class="project-card" data-tech="html css javascript">
+      <img src="project-portfolio.png" alt="Screenshot of the portfolio home page" class="project-img" width="640" height="360" loading="lazy">
+      <h2>Student Portfolio Website</h2>
+      <p>The site you are on right now. I built it to introduce myself and practice semantic HTML, responsive CSS layouts and JavaScript. It started as a school project, but I put a lot of work into it because I knew it would help me learn.</p>
+      <ul class="tech-tags" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <a href="Assessments.html" class="project-link">View project</a>
+    </article>
+    <article class="project-card" data-tech="html css javascript">
+      <img src="project-planner.png" alt="Screenshot of the Academic Planner with sample tasks" class="project-img" width="640" height="360" loading="lazy">
+      <h2>Academic Planner</h2>
+      <p>A task manager for assignments. Add tasks with a priority, tick them off, delete them and filter the list. Tasks stay saved in the browser. I practiced DOM manipulation, event handling and arrays.</p>
+      <ul class="tech-tags" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <a href="Academic_Planner.html" class="project-link">View project</a>
+    </article>
+    <article class="project-card" data-tech="html css javascript">
+      <img src="project-contact.png" alt="Screenshot of the contact form showing validation errors" class="project-img" width="640" height="360" loading="lazy">
+      <h2>Contact Form Validator</h2>
+      <p>A contact form that checks every field before sending: nothing can be empty, the email must be valid and the phone number must be digits only. I practiced form validation and error messages.</p>
+      <ul class="tech-tags" aria-label="Technologies used"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+      <a href="Contact.html" class="project-link">View project</a>
+    </article>
+  </section>
+  <section class="tour" aria-labelledby="tour-title">
+    <h2 id="tour-title">Watch a quick tour</h2>
+    <figure>
+      <video controls preload="metadata" poster="images/project-portfolio.png">
+        <source src="site-tour.mp4" type="video/mp4">
+        Your browser does not support video. <a href="media/site-tour.mp4">Download the tour</a>.
+      </video>
+      <figcaption>A short slideshow of each page of this site.</figcaption>
+    </figure>
+  </section>
+</main>
+<footer class="wrap"><p>&copy; <span id="year">2026</span> Kamsy Okwu</p></footer>
+</body>
+</html>
